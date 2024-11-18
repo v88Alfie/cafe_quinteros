@@ -35,6 +35,7 @@ const ContactUsFormModal = () => {
     register,
     handleSubmit,
     reset,
+    watch,
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(ContactFormSchema),
@@ -80,11 +81,15 @@ const ContactUsFormModal = () => {
               id="full_name"
               placeholder=" "
               {...register("full_name")}
-              className="peer bg-gray w-full border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-3 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
+              className="peer bg-gray w-full border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-[1.6rem] pt-[1rem] text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
             />
             <label
               htmlFor="full_name"
-              className="absolute left-3 top-2.5 text-[#060808]/[0.6] text-montserrat-14 h-full transition-all duration-200 ease-in-out peer-placeholder-shown:top-[1.5rem] peer-placeholder-shown:text-gray-400 peer-placeholder-shown:pt-0 peer-focus:top-2.5 peer-focus:text-sm peer-not-placeholder-shown:top-2.5"
+              className={`absolute left-[1.75rem] transition-all duration-200 ease-in-out ${
+                !watch("full_name")
+                  ? "top-[1.5rem] text-gray-400"
+                  : "top-2.5 text-sm"
+              } peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-primary`}
             >
               Full name*
             </label>
@@ -100,11 +105,15 @@ const ContactUsFormModal = () => {
               id="whatsapp_number"
               placeholder=" "
               {...register("whatsapp_number")}
-              className="peer bg-gray w-full  border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-3 text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
+              className="peer bg-gray w-full  border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-[1.6rem] pt-[1rem] text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
             />
             <label
               htmlFor="whatsapp_number"
-              className="absolute left-3 top-2.5 text-[#060808]/[0.6] text-montserrat-14 h-full transition-all duration-200 ease-in-out peer-placeholder-shown:top-[1.5rem] peer-placeholder-shown:text-gray-400 peer-placeholder-shown:pt-0 peer-focus:top-[0.5rem] peer-focus:text-sm"
+              className={`absolute left-[1.75rem] transition-all duration-200 ease-in-out ${
+                !watch("full_name")
+                  ? "top-[1.5rem] text-gray-400"
+                  : "top-2.5 text-sm"
+              } peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-primary`}
             >
               WhatsApp number*
             </label>
@@ -122,7 +131,11 @@ const ContactUsFormModal = () => {
             />
             <label
               htmlFor="message"
-              className="absolute w-full left-3 top-2.5 text-[#060808]/[0.6] text-montserrat-14 h-full transition-all duration-200 ease-in-out peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-placeholder-shown:pt-0 peer-focus:top-2.5 peer-focus:text-sm"
+              className={`absolute w-full left-[1.75rem] top-2.5 text-[#060808]/[0.6] text-montserrat-14 h-full transition-all duration-200 ease-in-out ${
+                !watch("full_name")
+                  ? "top-[1.5rem] text-gray-400"
+                  : "top-2.5 text-sm"
+              } peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-primary`}
             >
               How can we help you?
             </label>

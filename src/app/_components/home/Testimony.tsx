@@ -121,9 +121,9 @@ const Testimony = () => {
         <div className="md:overflow-hidden md:flex">
           <ul className="flex flex-col gap-[3.2rem] pt-[4rem] md:flex-row md:animate-infinite-scroll">
             {testimonies.map((testimony, index) => (
-              <li key={index} className="">
-                <Card className="min-h-[30rem] md:min-w-[38rem] p-[2.4rem]">
-                  <CardContent className="flex flex-col gap-[2.4rem] p-0">
+              <li key={index}>
+                <Card className="min-h-[30rem] md:min-w-[38rem] p-[2.4rem] hover:border-[#995B1A]">
+                  <CardContent className="flex flex-col gap-[2.4rem] p-0 ">
                     <div className="flex gap-[1.6rem] items-center">
                       <Image
                         className="rounded-t-[1.6rem] w-[8rem] h-[8rem]"

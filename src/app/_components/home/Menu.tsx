@@ -270,7 +270,7 @@ const Menu = () => {
   }
 
   return (
-    <div className="py-[4rem] px-[1.6rem] bg-gray w-full lg:p-[10rem] xl:p-[12rem]">
+    <div className="py-[4rem] px-[1.6rem] bg-gray w-full md:py-[6rem] md:px-[4rem] lg:p-[10rem] xl:p-[12rem]">
       <div className="md:flex md:flex-col md:items-center">
         <h2 className="text-montserrat-28 font-bold">Discover Our Menu</h2>
         <p className="text-montserrat-16 text-text/[.6] pt-[1.6rem] leading-[2.56rem]">
