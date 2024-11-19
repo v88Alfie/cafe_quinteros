@@ -15,9 +15,9 @@ interface Props {
 const MenuCard = ({ menu }: Props) => {
   return (
     <Card className="lg:min-h-full">
-      <CardContent className="p-0 md:flex md:flex-row">
+      <CardContent className="p-0 md:flex md:flex-row lg:flex-col">
         <Image
-          className="rounded-t-[1.6rem] w-full md:bg-auto md:rounded-r-none md:rounded-l-[1.6rem]"
+          className="rounded-t-[1.6rem] w-full md:bg-auto md:rounded-r-none md:rounded-l-[1.6rem] lg:rounded-t-[1.6rem] lg:rounded-b-none"
           src={require(`../../../public/images/${menu.image}`)}
           alt={menu.menu_name}
         />
