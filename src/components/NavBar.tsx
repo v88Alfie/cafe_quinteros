@@ -148,7 +148,7 @@ const NavBar = () => {
                 </span>
               </MenubarItem>
               <MenubarItem>
-                <div className="w-full h-[2.6rem] p-[3rem]">
+                <div className="w-[18rem] h-[6.4rem]">
                   <ContactUsFormModal />
                 </div>
               </MenubarItem>
