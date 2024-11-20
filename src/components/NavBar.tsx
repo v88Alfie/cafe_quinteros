@@ -30,7 +30,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import ContactUsFormModal from "@/app/_components/home/ContactUsFormModal";
-import English from "../public/images/english.png";
 
 const languages = [
   {
@@ -147,11 +146,9 @@ const NavBar = () => {
                   Visit Us
                 </span>
               </MenubarItem>
-              <MenubarItem>
-                <div className="w-[18rem] h-[6.4rem]">
-                  <ContactUsFormModal />
-                </div>
-              </MenubarItem>
+              <div className="w-[18rem] h-[6.4rem]">
+                <ContactUsFormModal />
+              </div>
             </MenubarContent>
           </MenubarMenu>
         </Menubar>
