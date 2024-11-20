@@ -74,7 +74,7 @@ const Menu = () => {
       description:
         "Bold and smooth, this espresso coffee is diluted with hot water for a rich flavor. Perfect for those who enjoy a strong yet balanced cup!",
       price: 2.0,
-      image: "cafe_americano.png",
+      image: "cafe_americano_full.png",
       is_best_seller: false,
       category: 2,
     },
@@ -297,9 +297,9 @@ const Menu = () => {
             <li
               key={selection.value}
               onClick={() => setSelectedCategory(selection.value)}
-              className={
+              className={`cursor-pointer ${
                 selected_category === selection.value ? "selected_menu" : ""
-              }
+              }`}
             >
               {selection.name}
             </li>

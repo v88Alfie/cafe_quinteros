@@ -17,11 +17,11 @@ const MenuCard = ({ menu }: Props) => {
     <Card className="lg:min-h-full">
       <CardContent className="p-0 md:flex md:flex-row lg:flex-col">
         <Image
-          className="rounded-t-[1.6rem] w-full md:bg-auto md:rounded-r-none md:rounded-l-[1.6rem] lg:rounded-t-[1.6rem] lg:rounded-b-none"
+          className="rounded-t-[1.6rem] w-full sm:max-h-[18rem] md:bg-auto md:max-w-[30%] md:max-h-[25rem] md:rounded-r-none md:rounded-l-[1.6rem] lg:max-h-[18rem]  lg:max-w-full lg:rounded-t-[1.6rem] lg:rounded-b-none"
           src={require(`../../../public/images/${menu.image}`)}
           alt={menu.menu_name}
         />
-        <div className="flex flex-col p-[2.4rem] gap-[0.8rem]">
+        <div className="flex flex-col p-[2.4rem] gap-[0.8rem] md:gap-[1.6rem]">
           <h4
             className={
               menu.menu_name.length > 30
