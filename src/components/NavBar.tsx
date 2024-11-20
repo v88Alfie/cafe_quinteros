@@ -64,7 +64,7 @@ const NavBar = () => {
         <NavigationMenu className="hidden lg:block">
           <NavigationMenuList className="flex gap-[3.2rem] text-montserrat-16">
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
+              <Link href="/about-us" legacyBehavior passHref>
                 <NavigationMenuLink className="text-text">
                   About
                 </NavigationMenuLink>
