@@ -77,9 +77,6 @@ const NavBar = () => {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-            {/* <NavigationMenuItem>
-              <NavigationMenuLink></NavigationMenuLink>
-            </NavigationMenuItem> */}
           </NavigationMenuList>
         </NavigationMenu>
         <DropdownMenu>
