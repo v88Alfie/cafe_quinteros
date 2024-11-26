@@ -1,8 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+
+/** COMPONENTS */
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import MenuCard from "./MenuCard";
+import MenuCard from "../_components/MenuCard";
+import { Container } from "postcss";
 
 interface Menu {
   id: Number;
@@ -74,7 +77,7 @@ const Menu = () => {
       description:
         "Bold and smooth, this espresso coffee is diluted with hot water for a rich flavor. Perfect for those who enjoy a strong yet balanced cup!",
       price: 2.0,
-      image: "cafe_americano_full.png",
+      image: "cafe_americano.png",
       is_best_seller: false,
       category: 2,
     },
@@ -118,7 +121,7 @@ const Menu = () => {
       description:
         "Creamy and rich, this espresso drink combines steamed milk with a light layer of froth. Perfect for those who love a smooth coffee experience!",
       price: 2.5,
-      image: "crepa_de_chocolate_ybanana.png",
+      image: "crepa_de_chocolate.png",
       is_best_seller: true,
       category: 1,
     },
@@ -129,7 +132,7 @@ const Menu = () => {
       description:
         "Flaky and buttery, this croissant is stuffed with savory ham and melted cheese. Ideal for a satisfying breakfast or snack!",
       price: 2.5,
-      image: "croissant_de_jamon_yqueso.png",
+      image: "croissant_de_jamon_queso.png",
       is_best_seller: false,
       category: 1,
     },
@@ -140,7 +143,7 @@ const Menu = () => {
       description:
         "Buttery and tender, this croissant is filled with juicy chicken and creamy sauce. Perfect for a flavorful lunch or light snack!",
       price: 2.5,
-      image: "croissant_de_pallo.png",
+      image: "croissant_de_pollo.png",
       is_best_seller: true,
       category: 1,
     },
@@ -217,7 +220,7 @@ const Menu = () => {
       description:
         "This sandwich features layers of savory ham and melted cheese between crispy bread. A delicious choice for a satisfying meal!",
       price: 3.5,
-      image: "panini_de_jamon_yqueso.png",
+      image: "panini_de_jamon_queso.png",
       is_best_seller: true,
       category: 1,
     },
@@ -250,7 +253,7 @@ const Menu = () => {
       description:
         "A delicious waffle topped with sweet banana slices, crunchy walnuts, and drizzled with rich caramel. Perfect for a decadent breakfast or dessert!",
       price: 3.5,
-      image: "waffle_de_banana_nuez_ycaramelo.png",
+      image: "waffle_de_banana.png",
       is_best_seller: true,
       category: 1,
     },
@@ -270,54 +273,48 @@ const Menu = () => {
   }
 
   return (
-    <div className="py-[4rem] px-[1.6rem] bg-gray w-full md:py-[6rem] md:px-[4rem] lg:p-[10rem] xl:p-[12rem]">
-      <div className="md:flex md:flex-col md:items-center">
-        <h2 className="text-montserrat-28 font-bold">Discover Our Menu</h2>
-        <p className="text-montserrat-16 text-text/[.6] pt-[1.6rem] leading-[2.56rem]">
-          From classic breakfasts to sweet desserts, our menu is filled with
-          Salvadoran favorites.
-        </p>
-      </div>
-      <h3 className="text-montserrat-20 leading-[3.2rem] py-[1.6rem]">
-        Best Sellers
-      </h3>
-      <ol className="flex flex-col gap-[1.6rem] lg:flex-row lg:flex-wrap">
-        {best_sellers.map((menu) => (
-          <li
-            key={menu?.id.toString()}
-            className="lg:max-w-[40rem] lg:max-h-[50rem]"
-          >
-            <MenuCard menu={menu} />
-          </li>
-        ))}
-      </ol>
-      <ScrollArea className="w-full py-[4rem]">
-        <ol className="flex gap-[2.4rem] text-montserrat-20 text-text/[.4] whitespace-nowrap">
-          {menu_selections.map((selection) => (
-            <li
-              key={selection.value}
-              onClick={() => setSelectedCategory(selection.value)}
-              className={`cursor-pointer ${
-                selected_category === selection.value ? "selected_menu" : ""
-              }`}
-            >
-              {selection.name}
+    <section>
+      <div className="container mx-0 py-[4rem] bg-gray">
+        <div className="md:flex md:flex-col md:items-center">
+          <h2 className="text-montserrat_bold_28">Discover Our Menu</h2>
+          <p className="text-montserrat-16 text-text/[.6] pt-[1.6rem] leading-[2.56rem]">
+            From classic breakfasts to sweet desserts, our menu is filled with
+            Salvadoran favorites.
+          </p>
+        </div>
+        <h3 className="text-montserrat_regular_20 py-[1.6rem]">Best Sellers</h3>
+        <ol className="flex justify-between flex-col gap-[1.6rem] lg:gap-[3.2rem] lg:flex-row lg:flex-wrap">
+          {best_sellers.map((menu) => (
+            <li key={menu?.id.toString()} className="lg:max-w-[37.8rem]">
+              <MenuCard menu={menu} />
             </li>
           ))}
         </ol>
-        <ScrollBar orientation="horizontal" />
-      </ScrollArea>
-      <ol className="flex flex-col gap-[1.6rem] lg:flex-row lg:flex-wrap">
-        {selected_menu.map((menu) => (
-          <li
-            key={menu.id.toString()}
-            className="lg:max-w-[40rem] lg:max-h-[50rem]"
-          >
-            <MenuCard menu={menu} />
-          </li>
-        ))}
-      </ol>
-    </div>
+        <ScrollArea className="w-full py-[4rem]">
+          <ol className="flex gap-[2.4rem] text-montserrat-20 text-text/[.4] whitespace-nowrap">
+            {menu_selections.map((selection) => (
+              <li
+                key={selection.value}
+                onClick={() => setSelectedCategory(selection.value)}
+                className={`cursor-pointer ${
+                  selected_category === selection.value ? "selected_menu" : ""
+                }`}
+              >
+                {selection.name}
+              </li>
+            ))}
+          </ol>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
+        <ol className="flex justify-between flex-col gap-[1.6rem] lg:gap-[3.2rem] lg:flex-row lg:flex-wrap">
+          {selected_menu.map((menu) => (
+            <li key={menu.id.toString()} className="lg:max-w-[37.8rem]">
+              <MenuCard menu={menu} />
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
   );
 };
 

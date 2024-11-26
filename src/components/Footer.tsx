@@ -1,20 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../public/images/cafe_quinteros_logo2.png";
-import TextLogo from "../public/images/cafe_quinteros_text_logo.png";
-import FacebookLogo from "../public/images/facebook.png";
-import WhatsappLogo from "../public/images/whatsapp.png";
-import InstagramLogo from "../public/images/Instagram.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray py-[4rem] p-[1.6rem] md:px-[4.8rem] lg:px-[10rem] xl:px-[12rem]">
+    <footer className="container mx-0 bg-gray py-[4rem] p-[1.6rem] md:px-[4.8rem] lg:px-[10rem] xl:px-[12rem]">
       <div className="flex gap-[1.6rem] mx-auto justify-center max-w-[40rem] items-center pb-[4rem] md:max-w-[60rem]">
-        <Image src={Logo} width={60} height={60} alt="Cafe Quinteros" />
         <Image
-          className="w-[100%] h-[2.2rem]"
-          src={TextLogo}
+          src="/images/cafe_quinteros_logo2.png"
+          width={60}
+          height={60}
           alt="Cafe Quinteros"
+        />
+        <Image
+          className="w-[100%]"
+          src="/images/cafe_quinteros_text_logo.png"
+          alt="Cafe Quinteros"
+          width={282}
+          height={22}
         />
       </div>
       <div className="flex flex-col gap-[3.2rem] py-[4rem] border-t-2 border-[#9FCADB] md:flex-row md:justify-between">
@@ -24,9 +26,24 @@ const Footer = () => {
           </h4>
           <h5 className="text-montserrat-16 text-text/[.6]">+503-6925-6177</h5>
           <div className="flex gap-[3.2rem]">
-            <Image src={WhatsappLogo} alt="Whatsapp" />
-            <Image src={FacebookLogo} alt="Facebook" />
-            <Image src={InstagramLogo} alt="Instagram" />
+            <Image
+              src={"/images/whatsapp.png"}
+              alt="Whatsapp"
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/images/facebook.png"}
+              alt="Facebook"
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/images/Instagram.png"}
+              alt="Instagram"
+              width={20}
+              height={20}
+            />
           </div>
           <h5 className="text-montserrat-16 text-text/[.6]">
             © 2024 Café Quiteros
@@ -45,8 +62,10 @@ const Footer = () => {
                 Develop by
               </p>
               <Image
-                src={require(`../public/images/armada_logics.png`)}
-                alt="Instagram"
+                src={`/images/armada_logics.png`}
+                alt="Armada Logics"
+                width={160}
+                height={36}
               />
             </div>
           </div>
@@ -62,8 +81,10 @@ const Footer = () => {
                 Develop by
               </p>
               <Image
-                src={require(`../public/images/armada_logics.png`)}
-                alt="Instagram"
+                src={`/images/armada_logics.png`}
+                alt="Armada Logics"
+                width={160}
+                height={36}
               />
             </div>
           </div>

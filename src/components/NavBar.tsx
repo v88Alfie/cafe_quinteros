@@ -2,9 +2,6 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../public/images/cafe_quinteros_logo2.png";
-import TextLogo from "../public/images/cafe_quinteros_text_logo.png";
-import MenuIcon from "../public/images/menu_icon.png";
 import {
   Menubar,
   MenubarContent,
@@ -29,7 +26,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
-import ContactUsFormModal from "@/app/_components/home/ContactUsFormModal";
+import ContactUsFormModal from "@/app/(home)/_components/ContactUsFormModal";
 
 const languages = [
   {
@@ -49,15 +46,22 @@ const languages = [
 const NavBar = () => {
   const [selected_language, setLanguage] = useState("spanish.png");
   return (
-    <nav className="fixed w-full bg-white top-0 left-0 py-[1.6rem] px-[1.6rem] flex items-center justify-between md:py-[3.2rem] md:px-[4rem] lg:px-[10rem] xl:px-[12rem]">
+    <nav className="container mx-0 fixed w-full z-50 bg-white top-0 left-0 py-[1.6rem] px-[1.6rem] flex items-center justify-between md:py-[3.2rem] md:px-[4rem] lg:px-[10rem] xl:px-[12rem]">
       <div className="flex items-center gap-[1.6rem]">
         <Link href="/">
-          <Image src={Logo} width={48} height={48} alt="Cafe Quinteros Logo" />
+          <Image
+            src={"/images/cafe_quinteros_logo2.png"}
+            width={48}
+            height={48}
+            alt="Cafe Quinteros Logo"
+          />
         </Link>
         <Image
           className="w-[100%] h-[1.5rem] hidden md:block"
-          src={TextLogo}
+          src={"/images/cafe_quinteros_text_logo.png"}
           alt="Cafe Quinteros Logo"
+          width={172}
+          height={48}
         />
       </div>
       <div className="flex justify-center gap-[3.2rem] items-center">
@@ -83,13 +87,17 @@ const NavBar = () => {
           <DropdownMenuTrigger className="relative outline-none">
             <Image
               className=""
-              src={require(`../public/images/${selected_language}`)}
-              alt={"test"}
+              src={`/images/${selected_language}`}
+              alt={`${selected_language}`}
+              width={30}
+              height={20}
             />
             <Image
               className="absolute right-[-1.2rem] bottom-0"
-              src={require(`../public/images/down_icon.png`)}
+              src={`/images/down_icon.png`}
               alt={"test"}
+              width={8}
+              height={4}
             />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="flex flex-col p-[.8rem] pl-[.4rem] gap-[.8rem] w-[12rem] rounded-lg">
@@ -105,8 +113,10 @@ const NavBar = () => {
                 >
                   <Image
                     className=""
-                    src={require(`../public/images/${language.flag}`)}
-                    alt={"test"}
+                    src={`/images/${language.flag}`}
+                    alt={`${language.flag}`}
+                    width={30}
+                    height={20}
                   />
                   <span
                     className={
@@ -125,7 +135,12 @@ const NavBar = () => {
         <Menubar className="lg:hidden">
           <MenubarMenu>
             <MenubarTrigger className="focus:outline-none data-[state=open]:bg-transparent p-0">
-              <Image src={MenuIcon} alt="Cafe Quinteros Logo" />
+              <Image
+                src={`/images/menu_icon.png`}
+                alt="Cafe Quinteros Logo"
+                width={36}
+                height={24}
+              />
             </MenubarTrigger>
             <MenubarContent className="flex flex-col justify-items-center p-[.8rem] gap-[2rem]">
               <MenubarItem>

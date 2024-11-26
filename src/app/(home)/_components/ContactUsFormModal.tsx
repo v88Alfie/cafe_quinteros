@@ -15,6 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { Input } from "@/components/ui/input";
 
 const ContactFormSchema = z.object({
   full_name: z.string().min(2, {
@@ -76,12 +77,12 @@ const ContactUsFormModal = () => {
           className="flex flex-col gap-[2.4rem] mt-[1.6rem] relative w-full"
         >
           <div className="relative">
-            <input
+            <Input
               type="text"
               id="full_name"
               placeholder=" "
+              className="text-montserrat_regular_14"
               {...register("full_name")}
-              className="peer bg-gray w-full border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-[1.6rem] pt-[1rem] text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
             />
             <label
               htmlFor="full_name"
@@ -100,17 +101,24 @@ const ContactUsFormModal = () => {
             )}
           </div>
           <div className="relative">
-            <input
+            <Input
+              type="text"
+              id="whatsapp_number"
+              placeholder=" "
+              className="text-montserrat_regular_14"
+              {...register("whatsapp_number")}
+            />
+            {/* <input
               type="text"
               id="whatsapp_number"
               placeholder=" "
               {...register("whatsapp_number")}
-              className="peer bg-gray w-full  border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-[1.6rem] pt-[1rem] text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
-            />
+              className="peer bg-gray w-full border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-[1.6rem] pt-[1rem] text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
+            /> */}
             <label
               htmlFor="whatsapp_number"
               className={`absolute left-[1.75rem] transition-all duration-200 ease-in-out ${
-                !watch("full_name")
+                !watch("whatsapp_number")
                   ? "top-[1.5rem] text-gray-400"
                   : "top-2.5 text-sm"
               } peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-primary`}
@@ -123,7 +131,7 @@ const ContactUsFormModal = () => {
               </p>
             )}
           </div>
-          <div className="relative  w-pull">
+          <div className="relative w-pull">
             <textarea
               id="message"
               {...register("message")}
@@ -131,8 +139,8 @@ const ContactUsFormModal = () => {
             />
             <label
               htmlFor="message"
-              className={`absolute w-full left-[1.75rem] top-2.5 text-[#060808]/[0.6] text-montserrat-14 h-full transition-all duration-200 ease-in-out ${
-                !watch("full_name")
+              className={`absolute w-full left-[1.75rem] top-2.5 text-[#060808]/[0.6] text-montserrat_regular_14 h-full transition-all duration-200 ease-in-out ${
+                !watch("message")
                   ? "top-[1.5rem] text-gray-400"
                   : "top-2.5 text-sm"
               } peer-focus:top-2.5 peer-focus:text-sm peer-focus:text-primary`}
