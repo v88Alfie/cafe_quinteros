@@ -66,7 +66,7 @@ const NavBar = () => {
       </div>
       <div className="flex justify-center gap-[3.2rem] items-center">
         <NavigationMenu className="hidden lg:block">
-          <NavigationMenuList className="flex gap-[3.2rem] text-montserrat-16">
+          <NavigationMenuList className="flex gap-[3.2rem] text-montserrat_regular_16">
             <NavigationMenuItem>
               <Link href="/about-us" legacyBehavior passHref>
                 <NavigationMenuLink className="text-text">

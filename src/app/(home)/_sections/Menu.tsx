@@ -277,7 +277,7 @@ const Menu = () => {
       <div className="container mx-0 py-[4rem] bg-gray">
         <div className="md:flex md:flex-col md:items-center">
           <h2 className="text-montserrat_bold_28">Discover Our Menu</h2>
-          <p className="text-montserrat-16 text-text/[.6] pt-[1.6rem] leading-[2.56rem]">
+          <p className="text-montserrat_regular_16 text-text/[.6] pt-[1.6rem] leading-[2.56rem]">
             From classic breakfasts to sweet desserts, our menu is filled with
             Salvadoran favorites.
           </p>

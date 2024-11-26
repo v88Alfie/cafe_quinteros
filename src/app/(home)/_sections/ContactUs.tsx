@@ -48,21 +48,23 @@ const ContactUs = () => {
           Taste El Salvador's regional and local breakfast & lunch in a place
           that's more than just a coffee shop.
         </h3>
-        <div className="flex flex-col gap-[3.2rem] pt-[4rem]">
+        <div className="flex flex-col gap-[3.2rem] pt-[4rem] lg:flex-row">
           {choose_cafe_cards.map((cafe_card) => (
             <Card key={cafe_card.id.toString()} className="bg-gray">
-              <CardContent className="flex flex-col gap-[2.4rem] p-[2.4rem]">
+              <CardContent className="flex flex-col gap-[2.4rem] p-[2.4rem] md:flex-row lg:flex-col">
                 <Image
                   className="rounded-t-[1.6rem]"
                   src={`/images/${cafe_card.image}`}
                   alt={cafe_card.title}
-                  width={30}
-                  height={20}
+                  width={80}
+                  height={80}
                 />
-                <h2 className="text-montserrat_bold_20">{cafe_card.title}</h2>
-                <h3 className="text-montserrat_regular_18 text-text/[.6]">
-                  {cafe_card.description}
-                </h3>
+                <div>
+                  <h2 className="text-montserrat_bold_20">{cafe_card.title}</h2>
+                  <h3 className="text-montserrat_regular_18 text-text/[.6]">
+                    {cafe_card.description}
+                  </h3>
+                </div>
               </CardContent>
             </Card>
           ))}
