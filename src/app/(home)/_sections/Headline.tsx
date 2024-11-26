@@ -25,14 +25,14 @@ const Headline = () => {
           <div className="flex flex-col gap-[1.6rem]">
             <div className="flex flex-row flex-[2] gap-[1.6rem] md:max-h-[17rem] lg:max-h-[22.3rem]">
               <Image
-                className="flex-1 flex rounded-[1.6rem] md:max-w-[12rem] lg:max-w-[16.5rem] xl:min-w-[26.5rem]"
+                className="flex-1 flex rounded-[1.6rem] md:max-w-[12rem] lg:min-w-[16.5rem] xl:min-w-[26.5rem]"
                 src={`/images/cafe_americano.png`}
                 alt={"cafe_americano"}
                 width={120}
                 height={168}
               />
               <Image
-                className="flex-1 flex rounded-[1.6rem] md:max-w-[12rem] lg:max-w-[16.5rem] xl:min-w-[26.5rem]"
+                className="flex-1 flex rounded-[1.6rem] md:max-w-[12rem] lg:min-w-[16.5rem] xl:min-w-[26.5rem]"
                 src={`/images/waffle_de_banana.png`}
                 alt="waffle_de_banana"
                 width={120}
