@@ -32,21 +32,21 @@ const JoinCommunity = () => {
       >
         <div className="xl:flex xl:gap-[8rem] xl:items-center">
           <div className="xl:flex flex-col">
-            <h2 className="text-montserrat-24 font-bold text-white md:text-[4rem] lg:text-[4.6rem] lg:leading-[5.8rem]">
+            <h2 className="text-montserrat_bold_24 text-white md:text-[4rem] lg:text-[4.6rem] lg:leading-[5.8rem]">
               Join Our Cafe Community
             </h2>
-            <h3 className="text-montserrat-16 leading-[2.56rem] text-white/[.6] pt-[1.6rem] lg:text-[2rem] lg:leading-[3.2rem]">
+            <h3 className="text-montserrat_regular_16 leading-[2.56rem] text-white/[.6] pt-[1.6rem] lg:text-[2rem] lg:leading-[3.2rem]">
               Get daily breakfast and lunch specials! Please provide us your
               WhatsApp number.
             </h3>
             <form className="flex flex-col gap-[1.6rem] pt-[4.8rem] md:flex-row">
               <Input
-                className="h-[6.4rem] text-montserrat-16 p-[1.6rem] rounded-lg bg-white"
+                className="h-[6.4rem] text-montserrat_regular_16 p-[1.6rem] rounded-lg bg-white"
                 type="text"
                 placeholder="WhatsApp number*"
               />
               <Button className="w-full h-[6.4rem] rounded-lg md:w-[17rem] md:px-[1.6rem]">
-                <span className="text-montserrat-16 font-bold text-white">
+                <span className="text-montserrat_bold_16 text-white">
                   Join Community
                 </span>
               </Button>
@@ -56,8 +56,8 @@ const JoinCommunity = () => {
             className="rounded-lg pt-[8rem] md:w-full md:max-h-[41rem] xl:max-w-[47rem] xl:p-0"
             src={`/images/map.png`}
             alt="Map"
-            width={30}
-            height={20}
+            width={352}
+            height={410}
           />
         </div>
       </div>

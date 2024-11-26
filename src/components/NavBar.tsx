@@ -144,17 +144,17 @@ const NavBar = () => {
             </MenubarTrigger>
             <MenubarContent className="flex flex-col justify-items-center p-[.8rem] gap-[2rem]">
               <MenubarItem>
-                <span className="text-montserrat-16 leading-[1.9rem] text-text/[0.6]">
+                <span className="text-montserrat_regular_16 text-text/[0.6]">
                   Home
                 </span>
               </MenubarItem>
               <MenubarItem>
-                <span className="text-montserrat-16 leading-[1.9rem] text-text/[0.6]">
+                <span className="text-montserrat_regular_16 text-text/[0.6]">
                   About Us
                 </span>
               </MenubarItem>
               <MenubarItem>
-                <span className="text-montserrat-16 leading-[1.9rem] text-text/[0.6]">
+                <span className="text-montserrat_regular_16 text-text/[0.6]">
                   Visit Us
                 </span>
               </MenubarItem>

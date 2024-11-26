@@ -65,6 +65,10 @@ const config: Config = {
           "2.2rem",
           { lineHeight: "2.6rem", fontWeight: "700" },
         ],
+        montserrat_bold_24: [
+          "2.4rem",
+          { lineHeight: "2.6rem", fontWeight: "700" },
+        ],
         montserrat_bold_28: [
           "2.8rem",
           { lineHeight: "3.4rem", fontWeight: "700" },

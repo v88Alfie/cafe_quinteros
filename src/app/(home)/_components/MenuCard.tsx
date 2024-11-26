@@ -27,17 +27,17 @@ const MenuCard = ({ menu }: Props) => {
           <h4
             className={
               menu.menu_name.length > 30
-                ? "text-montserrat-16 font-bold"
-                : "text-montserrat-20 font-bold"
+                ? "text-montserrat_bold_16"
+                : "text-montserrat_bold_20"
             }
           >
             {menu.menu_name}
           </h4>
-          <h3 className="text-montserrat-20">{menu.name}</h3>
-          <p className="text-montserrat-16 text-text/[.6]">
+          <h3 className="text-montserrat_regular_20">{menu.name}</h3>
+          <p className="text-montserrat_regular_16 text-text/[.6]">
             {menu.description}
           </p>
-          <p className="text-montserrat-20 text-primary font-bold">
+          <p className="text-montserrat_bold_20 text-primary">
             ${menu.price.toFixed(2)}
           </p>
         </div>

@@ -308,7 +308,7 @@ const Menu = () => {
         </ScrollArea>
         <ol className="flex justify-between flex-col gap-[1.6rem] lg:gap-[3.2rem] lg:flex-row lg:flex-wrap">
           {selected_menu.map((menu) => (
-            <li key={menu.id.toString()} className="lg:max-w-[37.8rem]">
+            <li key={menu?.id.toString()} className="lg:max-w-[37.8rem]">
               <MenuCard menu={menu} />
             </li>
           ))}

@@ -50,7 +50,7 @@ const ContactUs = () => {
         </h3>
         <div className="flex flex-col gap-[3.2rem] pt-[4rem]">
           {choose_cafe_cards.map((cafe_card) => (
-            <Card className="bg-gray">
+            <Card key={cafe_card.id.toString()} className="bg-gray">
               <CardContent className="flex flex-col gap-[2.4rem] p-[2.4rem]">
                 <Image
                   className="rounded-t-[1.6rem]"
