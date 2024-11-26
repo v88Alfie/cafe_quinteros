@@ -107,7 +107,7 @@ const NavBar = () => {
             >
               {languages.map((language) => (
                 <DropdownMenuRadioItem
-                  className="flex text-montserrat-16 pl-[.2rem] gap-2 justify-start"
+                  className="flex text-montserrat_regular_16 pl-[.2rem] gap-2 justify-start"
                   key={language.language}
                   value={language.flag}
                 >

@@ -41,10 +41,10 @@ const ContactUs = () => {
   return (
     <section>
       <div className="container mx-0 py-[4rem]">
-        <h2 className="text-montserrat-28 font-bold md:m-auto md:w-[80%] md:text-center">
+        <h2 className="text-montserrat_bold_28 md:m-auto md:w-[80%] md:text-center">
           Why Choose Café Quinteros
         </h2>
-        <h3 className="text-montserrat-16 leading-[2.56rem] text-text/[.6] pt-[1.6rem] md:m-auto md:w-[80%] md:text-center">
+        <h3 className="text-montserrat_regular_16 leading-[2.56rem] text-text/[.6] pt-[1.6rem] md:m-auto md:w-[80%] md:text-center">
           Taste El Salvador's regional and local breakfast & lunch in a place
           that's more than just a coffee shop.
         </h3>
@@ -59,10 +59,8 @@ const ContactUs = () => {
                   width={30}
                   height={20}
                 />
-                <h2 className="text-montserrat-20 leading-[3.2rem] font-bold">
-                  {cafe_card.title}
-                </h2>
-                <h3 className="text-montserrat-18 leading-[2.88rem] text-text/[.6]">
+                <h2 className="text-montserrat_bold_20">{cafe_card.title}</h2>
+                <h3 className="text-montserrat_regular_18 text-text/[.6]">
                   {cafe_card.description}
                 </h3>
               </CardContent>

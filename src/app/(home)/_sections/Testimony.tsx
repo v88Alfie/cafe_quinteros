@@ -78,8 +78,8 @@ const Testimony = () => {
           key={index}
           className={
             index <= rating
-              ? "text-montserrat-16 text-[#FFD700]"
-              : "text-montserrat-16 text-[#E0E0E0]"
+              ? "text-montserrat_regular_16 text-[#FFD700]"
+              : "text-montserrat_regular_16 text-[#E0E0E0]"
           }
         >
           ★
@@ -111,10 +111,10 @@ const Testimony = () => {
     <section>
       <div className="container mx-0 w-full bg-gray lg:px-[10rem] xl:px-[12rem]">
         <div className="py-[4rem] px-[1.6rem]">
-          <h2 className="text-montserrat-28 font-bold md:text-[4rem] md:m-auto md:w-[80%] md:text-center lg:text-[4.6rem]">
+          <h2 className="text-montserrat_bold_28 md:text-[4rem] md:m-auto md:w-[80%] md:text-center lg:text-[4.6rem]">
             Words From Our Customers
           </h2>
-          <h3 className="text-montserrat-16 leading-[2.56rem] text-text/[.6] pt-[1.6rem] md:m-auto md:w-[80%] md:text-center">
+          <h3 className="text-montserrat_regular_16 leading-[2.56rem] text-text/[.6] pt-[1.6rem] md:m-auto md:w-[80%] md:text-center">
             Our customers love our food and friendly vibe! Discover why we’re
             the top choice for El Salvadoran breakfast and lunch.
           </h3>
@@ -133,22 +133,22 @@ const Testimony = () => {
                           height={20}
                         />
                         <div>
-                          <h4 className="text-montserrat-16 leading-[2.56rem] font-bold">
+                          <h4 className="text-montserrat_regular_16 leading-[2.56rem] font-bold">
                             {testimony.user_name}
                           </h4>
                           <div className="flex items-center gap-[.8rem] ">
-                            <p className="text-montserrat-16 leading-[3.2rem] font-bold">
+                            <p className="text-montserrat_regular_16 leading-[3.2rem] font-bold">
                               {testimony.rating.toFixed(1)}
                             </p>
                             {setRating(testimony.rating)}
                           </div>
                         </div>
                       </div>
-                      <p className="text-montserrat-18 leading-[2.88rem] text-text/[.6] break-all">
+                      <p className="text-montserrat_regular_18 leading-[2.88rem] text-text/[.6] break-all">
                         {testimony.message}
                       </p>
                       <div className="flex gap-[1.6rem] items-center">
-                        <p className="text-montserrat-18 leading-[2.88rem] text-text/[.6]">
+                        <p className="text-montserrat_regular_18 leading-[2.88rem] text-text/[.6]">
                           Posted on
                         </p>
                         <Image

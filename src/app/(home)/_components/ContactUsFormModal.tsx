@@ -55,19 +55,19 @@ const ContactUsFormModal = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogTrigger className="text-montserrat-16 font-bold bg-primary rounded-lg h-full w-full">
+      <DialogTrigger className="text-montserrat_bold_16 bg-primary rounded-lg h-full w-full">
         <span className="text-white">Contact Us</span>
       </DialogTrigger>
       <DialogContent className="p-[3.2rem] bg-white rounded-lg md:max-w-2xl">
         <DialogHeader className="flex flex-col gap-[1.6rem]">
-          <DialogTitle className="text-montserrat-24 font-bold">
+          <DialogTitle className="text-montserrat_bold_24">
             Contact Café Quinteros
           </DialogTitle>
-          <DialogDescription className="text-montserrat-14 text-xl text-text/[.6]">
+          <DialogDescription className="text-montserrat_regular_14 text-xl text-text/[.6]">
             Have questions or need help? Feel free to reach out to us. We’re
             here to assist you and will reply within 24 hours!
           </DialogDescription>
-          <DialogDescription className="text-montserrat-14 text-xl text-text/[.6]">
+          <DialogDescription className="text-montserrat_regular_14 text-xl text-text/[.6]">
             For faster communication, you can contact us on WhatsApp using this
             <span className="text-primary font-bold"> +503 6925 6177</span>.
           </DialogDescription>
@@ -95,7 +95,7 @@ const ContactUsFormModal = () => {
               Full name*
             </label>
             {errors && (
-              <p className="text-montserrat-14 text-[#C15F56] mt-[0.8rem]">
+              <p className="text-montserrat_regular_14 text-[#C15F56] mt-[0.8rem]">
                 {errors.full_name?.message}
               </p>
             )}
@@ -108,13 +108,6 @@ const ContactUsFormModal = () => {
               className="text-montserrat_regular_14"
               {...register("whatsapp_number")}
             />
-            {/* <input
-              type="text"
-              id="whatsapp_number"
-              placeholder=" "
-              {...register("whatsapp_number")}
-              className="peer bg-gray w-full border border-[#060808]/[0.28] h-[4.8rem] text-montserrat-14 rounded-lg px-[1.6rem] pt-[1rem] text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
-            /> */}
             <label
               htmlFor="whatsapp_number"
               className={`absolute left-[1.75rem] transition-all duration-200 ease-in-out ${
@@ -126,7 +119,7 @@ const ContactUsFormModal = () => {
               WhatsApp number*
             </label>
             {errors && (
-              <p className="text-montserrat-14 text-[#C15F56] mt-[0.8rem]">
+              <p className="text-montserrat_regular_14 text-[#C15F56] mt-[0.8rem]">
                 {errors.whatsapp_number?.message}
               </p>
             )}
@@ -135,7 +128,7 @@ const ContactUsFormModal = () => {
             <textarea
               id="message"
               {...register("message")}
-              className="peer bg-gray w-full h-[14rem] border rounded-lg p-[1.6rem] border-[#060808]/[0.28] text-[#060808]/[0.6] text-montserrat-14 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
+              className="peer bg-gray w-full h-[14rem] border rounded-lg p-[1.6rem] border-[#060808]/[0.28] text-[#060808]/[0.6] text-montserrat_regular_14 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
             />
             <label
               htmlFor="message"
@@ -148,7 +141,7 @@ const ContactUsFormModal = () => {
               How can we help you?
             </label>
           </div>
-          <p className="text-[#060808]/[0.6] text-montserrat-14">
+          <p className="text-[#060808]/[0.6] text-montserrat_regular_14">
             By submitting this form, you agree to our{" "}
             <Link className="text-text" href={"/"}>
               Privacy Policy and Site Terms
@@ -156,9 +149,7 @@ const ContactUsFormModal = () => {
             .
           </p>
           <Button type="submit" className="mt-[2.4rem] w-full h-[5.2rem]">
-            <span className="text-montserrat-16 font-bold text-white">
-              Submit
-            </span>
+            <span className="text-montserrat_bold_16 text-white">Submit</span>
           </Button>
         </form>
       </DialogContent>

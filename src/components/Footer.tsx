@@ -21,10 +21,10 @@ const Footer = () => {
       </div>
       <div className="flex flex-col gap-[3.2rem] py-[4rem] border-t-2 border-[#9FCADB] md:flex-row md:justify-between">
         <div className="flex flex-col gap-[1.6rem]">
-          <h4 className="text-montserrat-16 font-bold text-text/[.6]">
-            Contact Us
-          </h4>
-          <h5 className="text-montserrat-16 text-text/[.6]">+503-6925-6177</h5>
+          <h4 className="text-montserrat_bold_16 text-text/[.6]">Contact Us</h4>
+          <h5 className="text-montserrat_regular_16 text-text/[.6]">
+            +503-6925-6177
+          </h5>
           <div className="flex gap-[3.2rem]">
             <Image
               src={"/images/whatsapp.png"}
@@ -45,20 +45,20 @@ const Footer = () => {
               height={20}
             />
           </div>
-          <h5 className="text-montserrat-16 text-text/[.6]">
+          <h5 className="text-montserrat_regular_16 text-text/[.6]">
             © 2024 Café Quiteros
           </h5>
         </div>
         <div className="flex flex-col gap-[3.2rem] md:flex-row-reverse">
           <div className="flex flex-col gap-[1.6rem]">
-            <h4 className="text-montserrat-16 font-bold text-text/[.6]">
+            <h4 className="text-montserrat_regular_16 font-bold text-text/[.6]">
               Visit Café Quinteros
             </h4>
-            <h5 className="text-montserrat-16 text-text/[.6] leading-[2.56rem]">
+            <h5 className="text-montserrat_regular_16 text-text/[.6] leading-[2.56rem]">
               Colonia Medica, Pasaje Llort #120, San Salvador, El Salvador
             </h5>
             <div className="hidden py-[4rem] gap-[1.6rem]  md:flex">
-              <p className="text-montserrat-16 text-text/[.28] leading-[2.6rem]">
+              <p className="text-montserrat_regular_16 text-text/[.28] leading-[2.6rem]">
                 Develop by
               </p>
               <Image
@@ -70,14 +70,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-[1.6rem]">
-            <h4 className="text-montserrat-16 font-bold text-text/[.6]">
-              About Us
-            </h4>
-            <h5 className="text-montserrat-16 text-text/[.6] leading-[2.56rem]">
+            <h4 className="text-montserrat_bold_16 text-text/[.6]">About Us</h4>
+            <h5 className="text-montserrat_regular_16 text-text/[.6] leading-[2.56rem]">
               About Café Quinteros
             </h5>
             <div className="flex py-[4rem] gap-[1.6rem] md:hidden">
-              <p className="text-montserrat-16 text-text/[.28] leading-[2.6rem]">
+              <p className="text-montserrat_regular_16 text-text/[.28] leading-[2.6rem]">
                 Develop by
               </p>
               <Image
