@@ -90,34 +90,6 @@ html{
   }
 }
 
-.text-montserrat-32 {
-  @apply text-[3.2rem] leading-[3.9rem];
-}
-
-.text-montserrat-28 {
-  @apply text-[2.8rem] leading-[3.43rem];
-}
-
-.text-montserrat-24 {
-  @apply text-[2.4rem] leading-[2.9rem];
-}
-
-.text-montserrat-20 {
-  @apply text-[2rem] leading-[3.2rem];
-}
-
-.text-montserrat-18 {
-  @apply text-[1.8rem];
-}
-
-.text-montserrat-16 {
-  @apply text-[1.6rem];
-}
-
-.text-montserrat-14 {
-  @apply text-[1.4rem];
-}
-
 .selected_menu{
   @apply border-b-4 border-primary
 }
