@@ -15,7 +15,7 @@ import { createTodo } from "@/app/api/todos";
 
 const TodoFormSchema = z.object({
   task: z.string().min(2, {
-    message: "Please Enter ToDo",
+    message: "Please Enter ToDo Task",
   }),
 });
 
@@ -46,7 +46,6 @@ const TodoItem = () => {
       ...data,
       is_done: false,
     });
-    console.log("submitting data:", data);
     reset();
   });
 
@@ -63,6 +62,9 @@ const TodoItem = () => {
           <span className="text-white">Add Task</span>
         </Button>
       </form>
+      {errors && (
+        <p className="text-red-500 pt-[0.5rem]">{errors?.task?.message}</p>
+      )}
     </div>
   );
 };
