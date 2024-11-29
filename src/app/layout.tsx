@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
+import QueryCientProvider from "./QueryClientProvider";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <NavBar />
-        {children}
-        <Footer />
-        <Toaster />
+        <QueryCientProvider>
+          <NavBar />
+          {children}
+          <Footer />
+          <Toaster />
+        </QueryCientProvider>
       </body>
     </html>
   );
