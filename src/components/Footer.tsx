@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="container mx-0 bg-gray py-[4rem] p-[1.6rem] md:px-[4.8rem] lg:px-[10rem] xl:px-[12rem]">
-      <div className="flex gap-[1.6rem] mx-auto justify-center max-w-[40rem] items-center pb-[4rem] md:max-w-[60rem]">
+    <footer className="bg-gray py-[4rem] p-[1.6rem] md:px-[4.8rem] lg:px-[10rem] xl:px-[12rem]">
+      <div className="container flex gap-[1.6rem] mx-auto justify-center max-w-[40rem] items-center pb-[4rem] md:max-w-[60rem]">
         <Image
           src="/images/cafe_quinteros_logo2.png"
           width={60}

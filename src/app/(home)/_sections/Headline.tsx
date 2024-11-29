@@ -4,8 +4,8 @@ import ContactUsFormModal from "../_components/ContactUsFormModal";
 
 const Headline = () => {
   return (
-    <section>
-      <div className="container mx-0 flex bg-white gap-[3.2rem] px-[1.6rem] pt-[10rem] pb-[4rem] w-full md:pt-[12rem] md:pb-[6rem] md:px-[4rem] lg:md:pt-[16rem] lg:pb-[10rem] lg:px-[10rem] xl:px-[12rem]">
+    <section className="bg-white">
+      <div className="container flex  gap-[3.2rem] px-[1.6rem] pt-[10rem] pb-[4rem] w-full md:pt-[12rem] md:pb-[6rem] md:px-[4rem] lg:md:pt-[16rem] lg:pb-[10rem] lg:px-[10rem] xl:px-[12rem]">
         <div className="md:max-w-[40.8rem] xl:max-w-[60rem]">
           <h4 className="text-montserrat_bold_18 md:text-montserrat_bold_22 xl:text-montserrat_bold_32">
             Café Quinteros:

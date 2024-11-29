@@ -46,7 +46,7 @@ const languages = [
 const NavBar = () => {
   const [selected_language, setLanguage] = useState("spanish.png");
   return (
-    <nav className="container mx-0 fixed w-full z-50 bg-white top-0 left-0 py-[1.6rem] px-[1.6rem] flex items-center justify-between md:py-[3.2rem] md:px-[4rem] lg:px-[10rem] xl:px-[12rem]">
+    <nav className="fixed w-full z-50 bg-white top-0 left-0 py-[1.6rem] px-[1.6rem] flex items-center justify-between md:py-[3.2rem] md:px-[4rem] lg:px-[10rem] xl:px-[12rem]">
       <div className="flex items-center gap-[1.6rem]">
         <Link href="/">
           <Image

@@ -40,7 +40,7 @@ const ContactUs = () => {
   ];
   return (
     <section>
-      <div className="container mx-0 py-[4rem]">
+      <div className="container py-[4rem]">
         <h2 className="text-montserrat_bold_28 md:m-auto md:w-[80%] md:text-center">
           Why Choose Café Quinteros
         </h2>

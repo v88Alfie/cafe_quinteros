@@ -108,8 +108,8 @@ const Testimony = () => {
   }, []);
 
   return (
-    <section>
-      <div className="container mx-0 w-full bg-gray lg:px-[10rem] xl:px-[12rem]">
+    <section className="bg-gray">
+      <div className="container w-full lg:px-[10rem] xl:px-[12rem]">
         <div className="py-[4rem] px-[1.6rem]">
           <h2 className="text-montserrat_bold_28 md:text-[4rem] md:m-auto md:w-[80%] md:text-center lg:text-[4.6rem]">
             Words From Our Customers

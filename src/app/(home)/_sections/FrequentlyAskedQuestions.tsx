@@ -55,7 +55,7 @@ const questions = [
 const FrequentlyAskedQuestions = () => {
   return (
     <section>
-      <div className="container mx-0 py-[4rem]">
+      <div className="container py-[4rem]">
         <h2 className="flex text-montserrat_bold_28 md:m-auto md:justify-center">
           Frequently Asked Questions
         </h2>

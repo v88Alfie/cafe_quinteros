@@ -25,11 +25,8 @@ const JoinCommunity = () => {
   };
 
   return (
-    <section>
-      <div
-        className="container mx-0 py-[4rem] px-[1.6rem] md:p-[4rem] lg:p-[10rem] xl:p-[12rem]"
-        style={bg_style}
-      >
+    <section style={bg_style}>
+      <div className="container py-[4rem] px-[1.6rem] md:p-[4rem] lg:p-[10rem] xl:p-[12rem]">
         <div className="xl:flex xl:gap-[8rem] xl:items-center">
           <div className="xl:flex flex-col">
             <h2 className="text-montserrat_bold_24 text-white md:text-[4rem] lg:text-[4.6rem] lg:leading-[5.8rem]">
